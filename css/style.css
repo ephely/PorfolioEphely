@@ -22,7 +22,6 @@ p {
   line-height: 1.5;
 }
 
-/* Header */
 .hero {
   text-align: center;
   padding: 4em 1em 2em;
@@ -38,7 +37,6 @@ p {
   border: 3px solid #00ffff;
 }
 
-/* Sections */
 .section {
   padding: 3em 1em;
   text-align: center;
@@ -55,7 +53,7 @@ p {
   height: auto;
   width: auto;
   max-width: 100%;
-  max-height: 400px; /* limite la hauteur pour éviter qu'une image soit immense */
+  max-height: 400px;
   border-radius: 12px;
   transition: transform 0.3s;
   object-fit: contain;
@@ -66,16 +64,6 @@ p {
 
 .audio {
   margin-top: 1em;
-}
-
-.profile-video {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1em;
-  border: 3px solid #00ffff;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
 }
 
 .btn {
@@ -151,6 +139,15 @@ p {
   max-height: 90vh;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.profile-video {
+  max-width: 500px; /* Limite la largeur maximale */
+  width: 100%; /* Responsive sur petits écrans */
+  height: auto; /* Respecte le ratio d'origine */
+  border-radius: 12px; /* Optionnel : coins arrondis */
+  margin-top: 1em; /* Espace au-dessus */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Légère ombre */
 }
 
 .media-preview {
