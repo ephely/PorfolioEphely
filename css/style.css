@@ -1,3 +1,4 @@
+/* Base */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -146,7 +147,7 @@ p {
   height: auto;
   border-radius: 12px;
   margin-top: 1em;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(15, 107, 128, 0.442);
 }
 
 .media-preview {
@@ -154,7 +155,7 @@ p {
   max-height: 200px;
   margin-top: 1em;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(22, 40, 40, 0.2);
   object-fit: cover;
 }
 
