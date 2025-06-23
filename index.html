@@ -6,7 +6,15 @@
     <title>Portfolio - Ephely K.</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="assets/videos/chrome-bg.mp4" type="video/mp4" />
+  </video> 
   <body>
+    <body>
+      <video autoplay muted loop playsinline id="bg-video">
+        <source src="assets/videos/chrome-bg.mp4" type="video/mp4" />
+      </video>
+    
     <header class="hero">
       <img src="assets/photo.jpg" alt="Photo de moi" class="profile-pic" />
 
@@ -26,28 +34,26 @@
       ></video>
     </header>
 
-    <main>
-      <section class="section" id="photos">
+    <main class="card-container-index">     
+      <section class="card-index" id="photos">
         <h2>📸 Mes photos</h2>
         <p>Voici quelques photos que j’ai prises et retouchées.</p>
-        <div class="gallery">
-          <img src="assets/photos/photo1.jpg" alt="photo1" />
-          <img src="assets/photos/photo2.jpg" alt="photo2" />
+        <div>
+          <img src="assets/photos/photo5.jpg" alt="photo5" class="exe-photo" />
         </div>
         <a href="photos.html" class="btn">Voir plus de photos</a>
       </section>
 
-      <section class="section" id="competences">
+      <section class="card-index" id="competences">
         <h2>📊 Tableau de competences</h2>
         <p>
           Vous trouverez ici un ensemble de mes competences et aptitudes sur
           différents sujets.
         </p>
-        <div class="audio"></div>
         <a href="comp.html" class="btn">En découvrir plus</a>
       </section>
 
-      <section class="section" id="blender">
+      <section class="card-index" id="projet">
         <h2>💻 Mes Projets</h2>
         <p>
           Voici quelques projets (personnelles et scolaires) en cours ou aboutis
