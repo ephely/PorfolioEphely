@@ -115,6 +115,17 @@ footer {
   color: #aaa;
 }
 
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(2px) brightness(0.4);
+}
+
 /* ===== Index ===== */
 .card-container-index {
   display: grid;
@@ -125,7 +136,7 @@ footer {
 }
 
 .card-index {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(6, 6, 6, 0.562);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   padding: 2rem;
@@ -150,11 +161,23 @@ footer {
 }
 
 .exe-photo {
-  width: 350px;
+  width: 250px;
   height: auto;
-  max-height: 400px;
+  max-height: 200px;
   border-radius: 10px;
   object-fit: cover;
+}
+
+.hero-index {
+  text-align: center;
+  padding: 4em 1em 2em;
+}
+
+.hero-index p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-align: center;
 }
 
 .profile-pic {
@@ -175,6 +198,13 @@ footer {
   box-shadow: 0 0 15px rgba(15, 107, 128, 0.442);
 }
 
+.contact {
+  text-align: center;
+  padding: 3em 1em;
+  max-width: 600px;
+  margin: 0 auto;
+  backdrop-filter: blur(8px);
+}
 /* ===== Comp ===== */
 .dashboard {
   display: grid;
