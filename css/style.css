@@ -115,7 +115,7 @@ footer {
   color: #aaa;
 }
 
-#bg-video {
+.bg-video {
   position: fixed;
   top: 0;
   left: 0;
@@ -125,7 +125,6 @@ footer {
   z-index: -1;
   filter: blur(2px) brightness(0.4);
 }
-
 /* ===== Index ===== */
 .card-container-index {
   display: grid;
