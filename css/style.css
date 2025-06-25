@@ -7,6 +7,16 @@ body {
   scroll-behavior: smooth;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  gap: 0.5rem;
+}
+
 a {
   color: #00ffff;
   text-decoration: none;
@@ -22,13 +32,12 @@ p {
   line-height: 1.5;
 }
 
-.hero {
+.hero-index {
   text-align: center;
   padding: 4em 1em 2em;
-  background: linear-gradient(to bottom, #1a1a1a, #0f0f0f);
 }
 
-.hero p {
+.hero-index p {
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
@@ -125,34 +134,32 @@ footer {
   z-index: -1;
   filter: blur(2px) brightness(0.4);
 }
-/* ===== Index ===== */
+
 .card-container-index {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
   padding: 2rem;
   justify-items: center;
 }
 
 .card-index {
-  background: rgba(6, 6, 6, 0.562);
+  background: rgba(6, 6, 6, 0.55);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
-  padding: 2rem;
-  width: 300px;
-  height: 300px;
-
+  padding: 3rem 2rem;
+  max-width: 900px;
+  width: 100%;
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
-  transition: transform 0.5s ease;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  color: white;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
 }
-
 .card-index:hover {
   transform: translateY(-5px);
 }
@@ -167,18 +174,6 @@ footer {
   max-height: 200px;
   border-radius: 10px;
   object-fit: cover;
-}
-
-.hero-index {
-  text-align: center;
-  padding: 4em 1em 2em;
-}
-
-.hero-index p {
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-  text-align: center;
 }
 
 .profile-pic {
@@ -203,9 +198,13 @@ footer {
   text-align: center;
   padding: 3em 1em;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 3em auto;
   backdrop-filter: blur(8px);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
 }
+
 /* ===== Comp ===== */
 .dashboard {
   display: grid;
@@ -244,6 +243,72 @@ footer {
   background-color: #00ffff;
 }
 
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.big-card {
+  padding: 2rem;
+  border-radius: 20px;
+  background: #1f1f1f;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.big-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.audio .progress-bar .progress {
+  background: #f12800;
+}
+.dev .progress-bar .progress {
+  background: #22ff09;
+}
+
+.patches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.patch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #00d6cf;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.patch img {
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+}
+
+.media-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 1rem;
+}
+
+.media-gallery img,
+.media-gallery video {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 /* ===== Project ===== */
 .project-list {
   display: flex;
@@ -272,4 +337,62 @@ footer {
   font-size: 0.85em;
   color: #ccc;
   margin: 0.5em 0;
+}
+
+/* ===== NAVIGATION STICKY ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  padding: 0.8em 1em;
+  box-shadow: 0 2px 8px rgba(0, 255, 255, 0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+/* ===== SMOOTH SCROLL ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .card-container-index {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
 }
