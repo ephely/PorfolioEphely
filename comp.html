@@ -9,113 +9,98 @@
   <body>
     <header class="hero">
       <h1>🛠️ Mes Compétences</h1>
-      <p>Un aperçu global de ce que je sais faire, et ce que j’apprends.</p>
+      <p>
+        Un aperçu global de mes savoir-faire en audiovisuel et développement.
+      </p>
       <a href="index.html" class="btn">← Retour à l'accueil</a>
     </header>
 
-    <main>
-      <section class="section-audio">
-        <h2>🎬 Compétences Audiovisuelles</h2>
-        <div class="dashboard">
-          <div class="card">
-            <h3>🎞️ Montage Vidéo</h3>
-            <div class="progress-bar">
-              <div class="progress" style="width: 70%"></div>
-            </div>
-            <div class="tools">Principalement CapCut</div>
-            <p>
-              Le montage (photo et vidéo) est pour moi un domaine où la
-              créativité prend tout son sens. Transformer une idée brute en un
-              résultat abouti et vivant est un processus que je maîtrise
-              particulièrement.
-            </p>
-            <img
-              src="assets/photos/montage_demo1.jpg"
-              alt="editing1"
-              class="media-preview"
-            />
-            <video class="media-preview" autoplay muted loop playsinline>
-              <source src="assets/videos/montage_demo2.mov" type="video/mp4" />
-              Votre navigateur ne supporte pas la vidéo.
-            </video>
-          </div>
-
-          <div class="card">
-            <h3>📸 Photographie</h3>
-            <div class="progress-bar">
-              <div class="progress" style="width: 50%"></div>
-            </div>
-            <div class="tools">
-              Appareil Photo (iPhone) et Dazz Cam, retouche avec Lightroom.
-            </div>
-            <p>
-              Je pratique la photo depuis maintenant 3 ans. Mon travail porte
-              principalement sur des paysages et des portraits. J’ai également
-              une excellente maîtrise d’Adobe Lightroom.
-            </p>
-            <img
-              src="assets/photos/photo5.jpg"
-              alt="photo_demo1"
-              class="media-preview"
-            />
-            <video class="media-preview" autoplay muted loop playsinline>
-              <source src="assets/videos/photo_demo.mov" type="video/mp4" />
-              Votre navigateur ne supporte pas la vidéo.
-            </video>
-            <img
-              src="assets/photos/photo7.jpg"
-              alt="photo_demo3"
-              class="media-preview"
-            />
-          </div>
-
-          <div class="card">
-            <h3>📱 Communication Visuelle</h3>
-            <div class="progress-bar">
-              <div class="progress" style="width: 80%"></div>
-            </div>
-            <div class="tools">Picsart, Canva, Instagram, TikTok.</div>
-            <p>
-              Je suis captivé par la création de contenu visuel pour les réseaux
-              sociaux. Les tendances en marketing digital me sont familières.
-              Capter l’attention du consommateur à travers un processus créatif
-              rigoureux me passionne particulièrement.
-            </p>
-          </div>
+    <main class="skills-wrapper">
+      <div class="card big-card audio">
+        <h2>🎬 Audiovisuel</h2>
+        <div class="progress-bar">
+          <div class="progress" style="width: 80%"></div>
         </div>
-      </section>
-
-      <section class="section-dev">
-        <h2>💻 Compétences Développement</h2>
-        <div class="dashboard">
-          <div class="card">
-            <h3>💻 Développement Web</h3>
-            <div class="progress-bar">
-              <div class="progress" style="width: 70%"></div>
-            </div>
-            <div class="tools">HTML, CSS, JS, C, Python, React, SQL, Git</div>
-            <p>
-              J'ai découvert le code en 1ère avec la spécialité NSI (Numérique
-              et Science de l'Informatique). Depuis, je me suis construit une
-              bonne base dans plusieurs langages et technologies, que je
-              continue à approfondir.
-            </p>
-            <img
-              src="assets/photos/coding_demo.jpg"
-              alt="coding_demo"
-              class="media-preview"
-            />
-          </div>
+        <div class="patches">
+          <span class="patch"
+            ><img src="assets/icons/picsart.png" alt="Premiere" />Premiere
+            Pro</span
+          >
+          <span class="patch"
+            ><img src="assets/icons/capcut.png" alt="CapCut" />CapCut Pro</span
+          >
+          <span class="patch"
+            ><img
+              src="assets/icons/lightroom.png"
+              alt="Lightroom"
+            />Lightroom</span
+          >
+          <span class="patch"
+            ><img src="assets/icons/canva.png" alt="Canva" />Canva</span
+          >
         </div>
-      </section>
+        <p>
+          Mon univers visuel: le montage (photo et vidéo), la photographie et la
+          création de contenu. Je sais monter des vidéos très efficacement avec
+          CapCut Pro et réaliser tout type de montage photo avec Picsart. La
+          photographie, elle, est une passion qui me suis depuis maintenant 3
+          ans, en me concentrant sur les portraits et les paysages. J'utilise
+          Lightroom pour sublimer mes clichés avec une retouche naturelle et
+          esthétique.
+        </p>
+        <div class="media-gallery">
+          <video autoplay muted loop playsinline>
+            <source src="assets/videos/photo_demo.mov" type="video/mp4" />
+          </video>
+          <img src="assets/photos/photo2.jpg" alt="Photo 1" />
+          <video autoplay muted loop playsinline>
+            <source src="assets/videos/montage_demo3.mov" type="video/mp4" />
+          </video>
+          <img src="assets/photos/photo7.jpg" alt="Photo 2" />
+        </div>
+      </div>
+
+      <div class="card big-card dev">
+        <h2>💻 Développement</h2>
+        <div class="progress-bar">
+          <div class="progress" style="width: 70%"></div>
+        </div>
+        <div class="patches">
+          <span class="patch"
+            ><img src="assets/icons/html.png" alt="HTML" />HTML</span
+          >
+          <span class="patch"
+            ><img src="assets/icons/css.png" alt="CSS" />CSS</span
+          >
+          <span class="patch"
+            ><img src="assets/icons/js.png" alt="JS" />JavaScript</span
+          >
+          <span class="patch"
+            ><img src="assets/icons/python.png" alt="Python" />Python</span
+          >
+          <span class="patch"
+            ><img src="assets/icons/react.png" alt="React" />React</span
+          >
+          <span class="patch"
+            ><img src="assets/icons/sql.png" alt="SQL" />SQL</span
+          >
+          <span class="patch"
+            ><img src="assets/icons/git.png" alt="Git" />Git</span
+          >
+        </div>
+        <p>
+          Initié au code en 1ère avec la spécialité NSI, j’ai exploré plusieurs
+          langages et frameworks. Aujourd’hui, je maîtrise les bases du
+          développement web et continue d'apprendre via des projets concrets.
+        </p>
+        <div class="media-gallery">
+          <img src="assets/photos/coding_demo.jpg" alt="Code" />
+        </div>
+      </div>
     </main>
 
     <footer>
       <p>© Ephely Koke-Koffi</p>
     </footer>
-    <div id="lightbox" class="lightbox">
-      <div id="lightbox-content"></div>
-    </div>
-    <script src="js/lightbox.js"></script>
   </body>
 </html>
