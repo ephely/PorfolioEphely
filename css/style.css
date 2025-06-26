@@ -7,7 +7,7 @@ body {
   scroll-behavior: smooth;
 }
 
-header {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,18 +30,6 @@ h2 {
 p {
   margin: 0.5em 0 1.5em;
   line-height: 1.5;
-}
-
-.hero-index {
-  text-align: center;
-  padding: 4em 1em 2em;
-}
-
-.hero-index p {
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-  text-align: center;
 }
 
 .section {
@@ -124,6 +112,7 @@ footer {
   color: #aaa;
 }
 
+/* ===== Index ===== */
 .bg-video {
   position: fixed;
   top: 0;
@@ -160,12 +149,18 @@ footer {
   align-items: center;
   text-align: center;
 }
+
 .card-index:hover {
   transform: translateY(-5px);
 }
 
 .card-index h2 {
   margin-top: 0;
+}
+
+strong {
+  color: #00ffff;
+  text-decoration: none;
 }
 
 .exe-photo {
@@ -176,22 +171,58 @@ footer {
   object-fit: cover;
 }
 
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+.hero-index {
+  text-align: center;
+  padding: 4em 1em 2em;
+}
+
+.hero-index p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.hero-index-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: rgba(6, 6, 6, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 3rem;
+  margin: 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-left,
+.hero-right {
+  flex: 1 1 400px;
+}
+
+.profile-pic-large {
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  margin-bottom: 1em;
-  border: 3px solid #00ffff;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid #00ffff;
+}
+
+.info {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .profile-video {
-  max-width: 500px;
   width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin-top: 1em;
-  box-shadow: 0 0 15px rgba(15, 107, 128, 0.442);
+  max-width: 500px;
+  border-radius: 15px;
+  border: 1px solid #00ffff33;
 }
 
 .contact {
@@ -265,10 +296,10 @@ footer {
 }
 
 .audio .progress-bar .progress {
-  background: #f12800;
+  background: #0048f1;
 }
 .dev .progress-bar .progress {
-  background: #22ff09;
+  background: #ff1d09;
 }
 
 .patches {

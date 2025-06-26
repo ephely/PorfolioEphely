@@ -11,9 +11,9 @@
       <source src="assets/videos/chrome.mp4" type="video/mp4" />
     </video>
 
-    <!-- ===== NAVIGATION ===== -->
     <nav class="navbar">
       <ul>
+        <li><a href="#hero">🏠 Accueil</a></li>
         <li><a href="#photos">📸 Photos</a></li>
         <li><a href="#competences">📊 Compétences</a></li>
         <li><a href="#projet">💻 Projets</a></li>
@@ -21,56 +21,106 @@
       </ul>
     </nav>
 
-    <!-- ===== HEADER ===== -->
-    <header class="hero-index">
-      <img src="assets/photo.jpg" alt="Photo de moi" class="profile-pic" />
-      <h1>Portfolio d'Ephely !</h1>
-      <p>
-        Je m'appelle Ephely, j'ai 19 ans et je suis étudiant en création
-        numérique (Audiovisuel) & digital (Développeur) à Holberton School.
-        Comme les images valent plus que 1000 mots, voici une petite vidéo de
-        présentation que j'ai réalisée.
-      </p>
-      <video
-        src="assets/videos/presentation.mp4"
-        controls
-        muted
-        playsinline
-        class="profile-video"
-      ></video>
+    <header class="hero-index-card" id="hero">
+      <div class="hero-left">
+        <img
+          src="assets/photo.jpg"
+          alt="Photo de moi"
+          class="profile-pic-large"
+        />
+        <div class="info">
+          <h1>🎓 Ephely Koke-Koffi</h1>
+          <p><strong>Âge:</strong> 19 ans</p>
+          <p><strong>Status:</strong> Étudiant en Création Numérique</p>
+          <p><strong>École:</strong> Holberton School</p>
+          <p>
+            <strong>Bio:</strong> Passionné par l’audiovisuel et le
+            développement.
+          </p>
+          <p>
+            <strong>Soft skills:</strong> Créativité, storytelling, autonomie,
+            travail en équipe.
+          </p>
+          <p>
+            <strong>Centres d’intérêt:</strong> Culture étrangères, Cinéma,
+            Musique.
+          </p>
+        </div>
+      </div>
+      <div class="hero-right">
+        <video
+          src="assets/videos/presentation.mp4"
+          controls
+          muted
+          playsinline
+          class="profile-video"
+        ></video>
+      </div>
     </header>
 
-    <!-- ===== CONTENU PRINCIPAL ===== -->
     <main class="card-container-index">
       <section class="card-index" id="photos">
         <h2>📸 Mes photos</h2>
         <p>Voici quelques photos que j’ai prises et retouchées.</p>
         <div>
-          <img src="assets/photos/photo5.jpg" alt="photo5" class="exe-photo" />
+          <img src="assets/photos/photo5.jpg" alt="Photo 1" class="exe-photo" />
+          <img src="assets/photos/photo8.jpg" alt="Photo 2" class="exe-photo" />
         </div>
         <a href="photos.html" class="btn">Voir plus de photos</a>
       </section>
 
       <section class="card-index" id="competences">
-        <h2>📊 Tableau de compétences</h2>
+        <h2>📊 Mes compétences</h2>
         <p>
-          Vous trouverez ici un ensemble de mes compétences et aptitudes sur
-          différents sujets.
+          Compétences en audiovisuel, développement web et design numérique.
         </p>
-        <a href="comp.html" class="btn">En découvrir plus</a>
+        <div class="dashboard">
+          <div class="card">
+            <h3>HTML / CSS</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>JavaScript</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>CapCut</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Python</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+        <a href="comp.html" class="btn">En savoir plus</a>
       </section>
 
       <section class="card-index" id="projet">
-        <h2>💻 Mes Projets</h2>
-        <p>
-          Voici quelques projets (personnels et scolaires), en cours ou aboutis,
-          que j’ai réalisés.
-        </p>
-        <a href="projet.html" class="btn">Voir les projets</a>
+        <h2>💻 Projets réalisés</h2>
+        <div class="project-list">
+          <div class="project-card">
+            <img src="assets/photos/site_demo.jpg" alt="Projet 1" />
+            <h3>Projet 1</h3>
+            <p>Site de recherche d'emploi pour étudiant.</p>
+          </div>
+          <div class="project-card">
+            <img src="assets/photos/blender_demo.jpg" alt="Projet 2" />
+            <h3>Projet 2</h3>
+            <p>Apprentissage du graphisme sur Blender.</p>
+          </div>
+        </div>
+        <a href="projet.html" class="btn">Voir plus de projet</a>
       </section>
     </main>
 
-    <!-- ===== CONTACT ===== -->
     <section class="contact" id="contact">
       <h2>📄 Me contacter</h2>
       <p>Disponible pour une alternance à partir de septembre.</p>
@@ -78,9 +128,8 @@
       <p>Email : <a href="mailto:ephely1@gmail.com">ephely1@gmail.com</a></p>
     </section>
 
-    <!-- ===== FOOTER ===== -->
     <footer>
-      <p>© Site codé par Ephely Koke-Koffi - Portfolio</p>
+      <p>© Ephely Koke-Koffi - Portfolio 2025</p>
     </footer>
   </body>
 </html>
